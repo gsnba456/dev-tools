@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universal Text Encoder & Decoder | Private & Client-Side</title>
-    <meta name="description" content="Free online Base64, Hex, URL, Binary, ROT13 encoder and JWT token decoder running 100% locally inside your browser. Zero backend logging.">
-    <link rel="canonical" href="https://dev-tools-kappa-three.vercel.app/">
+    <title>Free PDF to Markdown Converter | Client-Side & Private</title>
+    <meta name="description" content="Convert PDF documents to clean Markdown text directly in your browser using PDF.js and Turndown. Fast, free, and completely client-side.">
+    <link rel="canonical" href="https://dev-tools-kappa-three.vercel.app/pdf-to-markdown.html">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="https://unpkg.com/turndown/dist/turndown.js"></script>
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col justify-between font-sans">
 
@@ -17,8 +19,8 @@
                 DevEncoder Hub
             </a>
             <nav class="flex gap-4 text-xs">
-                <a href="index.html" class="text-indigo-400 font-semibold">Encoder/Decoder</a>
-                <a href="pdf-to-markdown.html" class="text-slate-300 hover:text-white">PDF to Markdown</a>
+                <a href="index.html" class="text-slate-300 hover:text-white">Encoder/Decoder</a>
+                <a href="pdf-to-markdown.html" class="text-indigo-400 font-semibold">PDF to Markdown</a>
             </nav>
         </div>
     </header>
@@ -49,6 +51,6 @@
     </footer>
 
     <script src="js/app.js"></script>
-    <script src="js/tools/encoders.js"></script>
+    <script src="js/tools/pdf-to-markdown.js"></script>
 </body>
 </html>
