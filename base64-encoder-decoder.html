@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base64 Encoder & Decoder Online | Free & Private</title>
+    <meta name="description" content="Encode text to Base64 or decode Base64 strings instantly in your browser with zero server logging.">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col justify-between font-sans">
+    <header class="bg-slate-900 text-white border-b border-slate-800 py-4 relative z-50">
+        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold tracking-tight">&lt;/&gt; DevTools Hub</a>
+            <nav id="tool-nav" class="flex gap-4 text-xs items-center"></nav>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8 flex-grow w-full space-y-8">
+        <section id="tool-viewport" data-active-tool="base64" class="bg-white p-6 rounded-xl border border-slate-200"></section>
+		
+		<!-- SEO & Structured Content Section -->
+<article class="bg-white p-6 rounded-xl border border-slate-200 text-sm space-y-6 mt-8">
+    <div>
+        <h2 class="text-xl font-bold text-slate-900 mb-2">What is Base64 Encoding?</h2>
+        <p class="text-slate-600 leading-relaxed">
+            Base64 is a binary-to-text encoding scheme that represents binary data in an ASCII string format. It is commonly used when there is a need to encode binary data—such as images, files, or complex string characters—so that it can be stored and transferred over media designed to handle textual data without corruption.
+        </p>
+    </div>
+
+    <div>
+        <h3 class="text-base font-bold text-slate-800 mb-2">Common Use Cases</h3>
+        <ul class="list-disc pl-5 text-slate-600 space-y-1">
+            <li>Embedding inline images directly inside HTML or CSS files using Data URIs.</li>
+            <li>Safe transmission of raw data inside HTTP headers, API payloads, or URL parameters.</li>
+            <li>Encoding email attachments via the MIME (Multipurpose Internet Mail Extensions) standard.</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3 class="text-base font-bold text-slate-800 mb-2">Frequently Asked Questions</h3>
+        <div class="space-y-3">
+            <div>
+                <p class="font-semibold text-slate-800">Is Base64 encoding the same as encryption?</p>
+                <p class="text-slate-600">No. Base64 is an encoding format, not an encryption algorithm. Anyone can easily decode a Base64 string back into its original form without a key. Never use Base64 to store sensitive passwords or private data.</p>
+            </div>
+            <div>
+                <p class="font-semibold text-slate-800">Is my data uploaded to any server?</p>
+                <p class="text-slate-600">No. All conversion operations happen entirely inside your web browser using JavaScript's native <code class="bg-slate-100 px-1 py-0.5 rounded text-xs">btoa()</code> and <code class="bg-slate-100 px-1 py-0.5 rounded text-xs">atob()</code> functions.</p>
+            </div>
+        </div>
+    </div>
+</article>
+<section id="tool-discovery" class="space-y-6"></section>
+<div id="requirement-banner"></div>
+<!-- Dynamic Donation Banner Container -->
+    <div id="donation-banner"></div>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-4 text-xs text-center border-t border-slate-800">
+        <p>&copy; DevTools Hub. 100% Private & Client-Side.</p>
+    </footer>
+
+    <script src="js/registry.js"></script>
+    <script src="js/tools/base64.js"></script>
+    <script src="js/tools/jwt.js"></script>
+    <script src="js/tools/binary.js"></script>
+	<script src="js/tools/pdfToMd.js"></script>
+	<script src="js/tools/html-formatter.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

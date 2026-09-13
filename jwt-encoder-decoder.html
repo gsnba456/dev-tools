@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JWT Token Decoder Online | Inspect JWT Headers & Payloads</title>
+    <meta name="description" content="Decode and inspect JSON Web Tokens (JWT) safely in your browser. Client-side execution without server calls.">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col justify-between font-sans">
+    <header class="bg-slate-900 text-white border-b border-slate-800 py-4 relative z-50">
+        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold tracking-tight">&lt;/&gt; DevTools Hub</a>
+            <nav id="tool-nav" class="flex gap-4 text-xs items-center"></nav>
+        </div>
+    </header>
+
+<main class="max-w-6xl mx-auto px-4 py-8 flex-grow w-full space-y-8">
+  <section id="tool-viewport" data-active-tool="jwt" class="bg-white p-6 rounded-xl border border-slate-200">
+  </section>
+  <!-- SEO & Structured Content Section -->
+  <article class="bg-white p-6 rounded-xl border border-slate-200 text-sm space-y-6 mt-8">
+    <div>
+      <h2 class="text-xl font-bold text-slate-900 mb-2">Understanding JSON Web Tokens (JWT)</h2>
+      <p class="text-slate-600 leading-relaxed">
+        A JSON Web Token (JWT) is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object. JWTs consist of three distinct parts separated by dots (<code class="bg-slate-100 px-1 py-0.5 rounded text-xs">.</code>): the **Header**, the **Payload**, and the **Signature**.
+      </p>
+    </div>
+    <div>
+      <h3 class="text-base font-bold text-slate-800 mb-2">Structure of a JWT</h3>
+      <ul class="list-disc pl-5 text-slate-600 space-y-1">
+        <li>
+          <strong>Header:</strong> Contains metadata about the token type (JWT) and the signing algorithm used (e.g., HS256, RS256).</li>
+          <li>
+            <strong>Payload:</strong> Contains the claims, user statements, permissions, and expiration timestamps (<code class="bg-slate-100 px-1 py-0.5 rounded text-xs">exp</code>).</li>
+            <li>
+              <strong>Signature:</strong> Used by API servers to verify that the sender is authentic and that the message wasn't tampered with along the way.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-base font-bold text-slate-800 mb-2">Frequently Asked Questions</h3>
+            <div class="space-y-3">
+              <div>
+                <p class="font-semibold text-slate-800">Is it safe to paste confidential JWT tokens here?</p>
+                <p class="text-slate-600">Yes. This tool parses Base64URL-encoded strings directly in client-side JavaScript. Your JWT token is never logged, sent across a network, or processed on a backend server.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- Dynamic Discovery Container -->
+        <section id="tool-discovery" class="space-y-6">
+        </section>
+		<div id="requirement-banner"></div>
+        <!-- Dynamic Donation Banner Container -->
+        <div id="donation-banner">
+        </div>
+      </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-4 text-xs text-center border-t border-slate-800">
+        <p>&copy; DevTools Hub. 100% Private & Client-Side.</p>
+    </footer>
+
+    <script src="js/registry.js"></script>
+    <script src="js/tools/base64.js"></script>
+    <script src="js/tools/jwt.js"></script>
+    <script src="js/tools/binary.js"></script>
+	<script src="js/tools/pdfToMd.js"></script>
+	<script src="js/tools/html-formatter.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+{
+  "siteName": "DevTools Hub",
+  "baseUrl": "file:///C:/Users/spatil/Desktop/books/InProgressToolswebsiteWithDynamicConfiguration",
+  "twitterHandle": "@devtools_hub",
+  "formspreeEndpoint": "https://formspree.io/f/YOUR_FORM_ID",
+  "donation": {
+    "buyMeACoffee": "https://buymeacoffee.com/yourhandle",
+    "githubSponsors": "https://github.com/sponsors/yourhandle"
+  },
+  "toolScripts": [
+    "js/tools/base64.js",
+    "js/tools/jwt.js",
+    "js/tools/binary.js",
+    "js/tools/pdfToMd.js",
+    "js/tools/html-formatter.js"
+  ],
+  "tools": {
+    "base64-encoder-decoder": {
+      "title": "Base64 Encoder & Decoder Online | Free & Private",
+      "metaDescription": "Encode text to Base64 or decode Base64 strings safely in your browser. 100% client-side with zero server logging.",
+      "keywords": "base64 encoder, base64 decoder, online base64, base64 string, base64 convert",
+      "canonicalPath": "/base64-encoder-decoder.html",
+      "applicationCategory": "DeveloperApplication"
+    },
+    "jwt-encoder-decoder": {
+      "title": "JWT Token Decoder | Inspect JWT Headers & Payloads",
+      "metaDescription": "Decode and inspect JSON Web Tokens safely in your browser. Parse headers, payloads, and signatures instantly.",
+      "keywords": "jwt decoder, json web token, jwt parser, decode jwt, jwt inspector",
+      "canonicalPath": "/jwt-encoder-decoder.html",
+      "applicationCategory": "SecurityApplication"
+    },
+    "binary-encoder-decoder": {
+      "title": "Binary Text Converter | Text to Binary Code Online",
+      "metaDescription": "Convert text to 8-bit binary numbers or decode binary back to plain ASCII text instantly.",
+      "keywords": "text to binary, binary converter, binary to text, 8-bit binary, binary translator",
+      "canonicalPath": "/binary-encoder-decoder.html",
+      "applicationCategory": "DeveloperApplication"
+    },
+    "pdfToMd": {
+      "title": "PDF to Markdown Converter Online | Free & Private",
+      "metaDescription": "Convert uploaded PDF documents to Markdown format locally in your browser with zero server uploads.",
+      "keywords": "pdf to markdown, extract text from pdf, convert pdf to md, client side pdf parser",
+      "canonicalPath": "/pdfToMd.html",
+      "applicationCategory": "UtilitiesApplication"
+    },
+    "html-formatter": {
+      "title": "HTML Formatter & Beautifier Online | Free & Private",
+      "metaDescription": "Format, indent, and beautify raw HTML code instantly in your browser with customizable indentation.",
+      "keywords": "html formatter, html beautifier, format html online, pretty print html, indent html",
+      "canonicalPath": "/html-formatter.html",
+      "applicationCategory": "DeveloperApplication"
+    }
+  }
+}

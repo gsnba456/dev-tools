@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF to Markdown Converter Online | Free & Private</title>
+    <meta name="description" content="Convert uploaded PDF documents to Markdown format locally in your browser. 100% private client-side processing without server uploads.">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col justify-between font-sans">
+    <header class="bg-slate-900 text-white border-b border-slate-800 py-4 relative z-50">
+        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold tracking-tight">&lt;/&gt; DevTools Hub</a>
+            <nav id="tool-nav" class="flex gap-4 text-xs items-center"></nav>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8 flex-grow w-full space-y-8">
+        <section id="tool-viewport" data-active-tool="pdfToMd" class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm"></section>
+        
+		<!-- SEO & Structured Content Section -->
+<article class="bg-white p-6 rounded-xl border border-slate-200 text-sm space-y-6 mt-8">
+    <div>
+        <h2 class="text-xl font-bold text-slate-900 mb-2">Convert PDF Documents to Clean Markdown Text</h2>
+        <p class="text-slate-600 leading-relaxed">
+            Markdown is a lightweight markup language with plain-text formatting syntax used extensively by developers, documentation writers, and platforms like GitHub, Notion, and Obsidian. This utility parses text layers from uploaded Portable Document Format (PDF) files and formats headers and body content into valid Markdown markup.
+        </p>
+    </div>
+
+    <div>
+        <h3 class="text-base font-bold text-slate-800 mb-2">Why Use Client-Side PDF Parsing?</h3>
+        <ul class="list-disc pl-5 text-slate-600 space-y-1">
+            <li><strong>Complete Data Privacy:</strong> Confidential documents, financial statements, or private notes are processed entirely inside your browser memory without being stored on external servers.</li>
+            <li><strong>Fast Processing:</strong> Avoid queue times or file size upload restrictions imposed by cloud-based conversion tools.</li>
+            <li><strong>AI-Ready Content:</strong> Converted Markdown formatted text is ideal for copying directly into LLMs, documentation repositories, or knowledge bases.</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3 class="text-base font-bold text-slate-800 mb-2">Frequently Asked Questions</h3>
+        <div class="space-y-3">
+            <div>
+                <p class="font-semibold text-slate-800">Does this tool support scanned image PDFs?</p>
+                <p class="text-slate-600">This tool parses structural text layers from digital PDFs. Scanned image documents without an embedded text layer (OCR) may require an OCR preprocessing tool before text can be extracted.</p>
+            </div>
+        </div>
+    </div>
+</article>
+<section id="tool-discovery" class="space-y-6"></section>
+<div id="requirement-banner"></div>
+<!-- Dynamic Donation Banner Container -->
+		<div id="donation-banner"></div>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-4 text-xs text-center border-t border-slate-800">
+        <p>&copy; DevTools Hub. 100% Private & Client-Side.</p>
+    </footer>
+
+    <!-- Include all tool registrations -->
+    <script src="js/registry.js"></script>
+    <script src="js/tools/base64.js"></script>
+    <script src="js/tools/jwt.js"></script>
+    <script src="js/tools/binary.js"></script>
+    <script src="js/tools/pdfToMd.js"></script>
+	<script src="js/tools/html-formatter.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Formatter & Beautifier Online | DevTools Hub</title>
+    <meta name="description" content="Format, indent, and beautify raw HTML code instantly in your browser. 100% client-side formatting with customizable indentation.">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col justify-between font-sans">
+    <header class="bg-slate-900 text-white border-b border-slate-800 py-4 relative z-50">
+        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold tracking-tight">&lt;/&gt; DevTools Hub</a>
+            <nav id="tool-nav" class="flex gap-4 text-xs items-center"></nav>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8 flex-grow w-full space-y-8">
+        <!-- Active Tool Viewport Mount -->
+        <section id="tool-viewport" data-active-tool="html-formatter" class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm"></section>
+
+        <!-- Dynamic Category Discovery Section -->
+        <section id="tool-discovery" class="space-y-6"></section>
+
+        <!-- Structured Content / FAQ Section -->
+        <article class="bg-white p-6 rounded-xl border border-slate-200 text-sm space-y-6">
+            <div>
+                <h2 class="text-xl font-bold text-slate-900 mb-2">Clean and Beautify HTML Markup</h2>
+                <p class="text-slate-600 leading-relaxed">
+                    Minified or unformatted HTML code can be extremely difficult to read and debug. An HTML Formatter reorganizes nested elements, adds proper tag indentation, and splits combined tags across readable lines.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-base font-bold text-slate-800 mb-2">Key Features</h3>
+                <ul class="list-disc pl-5 text-slate-600 space-y-1">
+                    <li><strong>Custom Indentation:</strong> Choose between 2-space or 4-space tab indentation.</li>
+                    <li><strong>Self-Closing Tag Aware:</strong> Correctly handles HTML5 void tags like <code class="bg-slate-100 px-1 py-0.5 rounded text-xs">&lt;img&gt;</code>, <code class="bg-slate-100 px-1 py-0.5 rounded text-xs">&lt;input&gt;</code>, and <code class="bg-slate-100 px-1 py-0.5 rounded text-xs">&lt;br&gt;</code> without disrupting layout depth.</li>
+                    <li><strong>100% Private:</strong> Code execution runs entirely inside browser memory without sending markup to external servers.</li>
+                </ul>
+            </div>
+        </article>
+		<div id="requirement-banner"></div>
+        <!-- Dynamic Donation Banner Mount -->
+        <div id="donation-banner"></div>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-4 text-xs text-center border-t border-slate-800">
+        <p>&copy; DevTools Hub. 100% Private & Client-Side.</p>
+    </footer>
+
+    <!-- Tool Scripts -->
+    <script src="js/registry.js"></script>
+    <script src="js/tools/base64.js"></script>
+    <script src="js/tools/jwt.js"></script>
+    <script src="js/tools/binary.js"></script>
+    <script src="js/tools/pdfToMd.js"></script>
+    <script src="js/tools/html-formatter.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
