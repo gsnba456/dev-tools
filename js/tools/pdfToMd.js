@@ -1,6 +1,6 @@
 (function() {
     registerTool({
-        id: "pdf-to-markdown",
+        id: "pdfToMd",
         name: "PDF to Markdown Converter",
         category: "PDF Tools",
         pageUrl: "pdfToMd.html",
